@@ -7,14 +7,7 @@ public class can_make_palindrome {
         for(int i=0;i<a.length();i++){
             b=b^(1<<(a.charAt(i)-'a'));
         }
-        int count=0;
-        while(b>0){
-            if((b>>1 & 1)==1){
-                count++;
-            }
-            b=b>>1;       
-         }
-        if(count<=1){
+        if(b==0&&(b&(b-1))==0){
             System.out.println("Yes");
         }
         else{
@@ -22,3 +15,4 @@ public class can_make_palindrome {
         }
      }
 }
+
