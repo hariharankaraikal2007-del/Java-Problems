@@ -16,4 +16,5 @@ public class Longest_increasing_subsequence {
                 }
             }
         }
+        sc.close();
 }}
